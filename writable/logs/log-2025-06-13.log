@@ -1,0 +1,33 @@
+CRITICAL - 2025-06-13 13:16:37 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html./sports_project/assets/uploads/1749820597.png): Failed to open stream: No such file or directory
+[Method: POST, Route: add_sports]
+in APPPATH/Controllers/Venue.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(35): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->sports_name_add()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-06-13 13:17:02 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html./sports_project/assets/uploads/1749820622.png): Failed to open stream: No such file or directory
+[Method: POST, Route: add_sports]
+in APPPATH/Controllers/Venue.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(35): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->sports_name_add()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-06-13 13:19:17 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html./sports_project/assets/uploads/1749820757.png): Failed to open stream: No such file or directory
+[Method: POST, Route: add_sports]
+in APPPATH/Controllers/Venue.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(35): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->sports_name_add()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

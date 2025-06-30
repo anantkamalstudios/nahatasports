@@ -1,0 +1,54 @@
+ERROR - 2025-04-28 09:49:40 --> mysqli_sql_exception: Column 'phone' cannot be null in D:\xampp\htdocs\sports_project\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\sports_project\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\xampp\htdocs\sports_project\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\xampp\htdocs\sports_project\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\xampp\htdocs\sports_project\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\xampp\htdocs\sports_project\app\Models\signup_model.php(16): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\sports_project\app\Controllers\Registration.php(52): App\Models\signup_model->add(Array)
+#6 D:\xampp\htdocs\sports_project\system\CodeIgniter.php(933): App\Controllers\Registration->registration()
+#7 D:\xampp\htdocs\sports_project\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#8 D:\xampp\htdocs\sports_project\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\sports_project\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\sports_project\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\sports_project\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-28 09:49:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'phone' cannot be null
+[Method: POST, Route: sign_up]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (:full_name:, :phone:, :username:, :email:, :password:)', [...], false)
+ 2 APPPATH\Models\signup_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Registration.php(52): App\Models\signup_model->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Registration->registration()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 09:49:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (\'ritu shejwalkar\', NULL, NULL, \'ritu@gmail.com\', \'$2y$10$dxxQ6oguquLjJQPBFHokKubwJIh3L2/WVBTLA9FVR1juKkcWQpYd2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (\'ritu shejwalkar\', NULL, NULL, \'ritu@gmail.com\', \'$2y$10$dxxQ6oguquLjJQPBFHokKubwJIh3L2/WVBTLA9FVR1juKkcWQpYd2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (:full_name:, :phone:, :username:, :email:, :password:)', [...], false)
+ 4 APPPATH\Models\signup_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Registration.php(52): App\Models\signup_model->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Registration->registration()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-28 09:49:40 --> [Caused by] mysqli_sql_exception: Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (\'ritu shejwalkar\', NULL, NULL, \'ritu@gmail.com\', \'$2y$10$dxxQ6oguquLjJQPBFHokKubwJIh3L2/WVBTLA9FVR1juKkcWQpYd2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (\'ritu shejwalkar\', NULL, NULL, \'ritu@gmail.com\', \'$2y$10$dxxQ6oguquLjJQPBFHokKubwJIh3L2/WVBTLA9FVR1juKkcWQpYd2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (\'ritu shejwalkar\', NULL, NULL, \'ritu@gmail.com\', \'$2y$10$dxxQ6oguquLjJQPBFHokKubwJIh3L2/WVBTLA9FVR1juKkcWQpYd2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`full_name`, `phone`, `username`, `email`, `password`) VALUES (:full_name:, :phone:, :username:, :email:, :password:)', [...], false)
+ 5 APPPATH\Models\signup_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Registration.php(52): App\Models\signup_model->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Registration->registration()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

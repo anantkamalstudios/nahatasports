@@ -1,0 +1,12 @@
+CRITICAL - 2025-04-11 12:36:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "add_venue_view.php"
+[Method: GET, Route: add_venue]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_venue_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_venue_view', [], true)
+ 3 APPPATH\Controllers\Venue.php(206): view('add_venue_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Venue->add_venue_name()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Venue))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

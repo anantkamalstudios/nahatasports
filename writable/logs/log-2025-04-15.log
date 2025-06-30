@@ -1,0 +1,28 @@
+CRITICAL - 2025-04-15 14:14:52 --> ErrorException: Undefined variable $sports_bannar_image
+[Method: GET, Route: coaching/edit_coach]
+in APPPATH\Views\coaching\sports_bannar_edit_view.php on line 28.
+ 1 APPPATH\Views\coaching\sports_bannar_edit_view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sports_bannar_image', 'D:\\xampp\\htdocs\\sports_project\\app\\Views\\coaching\\sports_bannar_edit_view.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\sports_project\\app\\Views\\coaching\\sports_bannar_edit_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('coaching/sports_bannar_edit_view', [], true)
+ 5 APPPATH\Controllers\Coaching.php(133): view('coaching/sports_bannar_edit_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Coaching->edit_bannar('')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Coaching))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-15 14:16:50 --> ErrorException: Undefined variable $user_sport
+[Method: GET, Route: coaching/edit_coach]
+in APPPATH\Views\coaching\sports_bannar_edit_view.php on line 28.
+ 1 APPPATH\Views\coaching\sports_bannar_edit_view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_sport', 'D:\\xampp\\htdocs\\sports_project\\app\\Views\\coaching\\sports_bannar_edit_view.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\sports_project\\app\\Views\\coaching\\sports_bannar_edit_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('coaching/sports_bannar_edit_view', [], true)
+ 5 APPPATH\Controllers\Coaching.php(133): view('coaching/sports_bannar_edit_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Coaching->edit_bannar('')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Coaching))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

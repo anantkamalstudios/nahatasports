@@ -1,0 +1,105 @@
+ERROR - 2025-05-03 11:51:51 --> mysqli_sql_exception: Table 'u156770353_newtest.post' doesn't exist in /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Database/MySQLi/Connection.php(327): mysqli->query()
+#1 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/u156770353/domains/nahatasports.com/public_html/newtest/app/Models/venue_model.php(228): CodeIgniter\Database\BaseConnection->query()
+#4 /home/u156770353/domains/nahatasports.com/public_html/newtest/app/Controllers/Venue.php(438): App\Models\venue_model->show_post_list()
+#5 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/CodeIgniter.php(933): App\Controllers\Venue->post()
+#6 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#7 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 /home/u156770353/domains/nahatasports.com/public_html/newtest/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/u156770353/domains/nahatasports.com/public_html/newtest/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2025-05-03 11:51:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'u156770353_newtest.post' doesn't exist
+[Method: GET, Route: post_category]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 APPPATH/Models/venue_model.php(228): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Venue.php(438): App\Models\venue_model->show_post_list()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 11:51:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'u156770353_newtest.post' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/venue_model.php(228): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Venue.php(438): App\Models\venue_model->show_post_list()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 11:51:51 --> [Caused by] mysqli_sql_exception: Table 'u156770353_newtest.post' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/venue_model.php(228): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Venue.php(438): App\Models\venue_model->show_post_list()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 12:02:36 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html./sports_project/assets/uploads/1746273756.png): Failed to open stream: No such file or directory
+[Method: POST, Route: add_blog]
+in APPPATH/Controllers/Venue.php on line 456.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(456): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->add_post_data()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 12:03:06 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html/sports_project/assets/uploads/1746273786.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: edit_post]
+in APPPATH/Controllers/Venue.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(509): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post_name_edit()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 12:03:08 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html/sports_project/assets/uploads/1746273788.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: edit_post]
+in APPPATH/Controllers/Venue.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(509): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post_name_edit()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 12:04:06 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html./sports_project/assets/uploads/1746273846.jpg): Failed to open stream: No such file or directory
+[Method: POST, Route: add_blog]
+in APPPATH/Controllers/Venue.php on line 456.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(456): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->add_post_data()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2025-05-03 12:08:42 --> ErrorException: move_uploaded_file(/home/u156770353/domains/nahatasports.com/public_html/sports_project/assets/uploads/1746274122.png): Failed to open stream: No such file or directory
+[Method: POST, Route: edit_post]
+in APPPATH/Controllers/Venue.php on line 509.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Venue.php(509): move_uploaded_file()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Venue->post_name_edit()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
