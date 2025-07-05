@@ -88,6 +88,72 @@ $routes->group('', ['filter' => 'auth'], function($routes) {
     $routes->post('/post_delete', 'Venue::delete_post');
     $routes->get('/venue/post_edit(:any)', 'Venue::edit_post/$1');
     $routes->post('/edit_post', 'Venue::post_name_edit');
+<<<<<<< HEAD
+=======
+
+    // shankar
+    $routes->get('/hero', 'Cms::hero');
+    $routes->get('/add_hero', 'Cms::add_hero');
+    $routes->post('/save_hero', 'Cms::save_hero');
+    $routes->get('/edit_hero/(:num)', 'Cms::edit_hero/$1');
+    $routes->post('/update_hero/(:num)', 'Cms::update_hero/$1');
+    $routes->get('/delete_hero/(:num)', 'Cms::delete_hero/$1');
+
+    $routes->get('/program', 'Cms::program');
+    $routes->get('/add_program', 'Cms::add_program');
+    $routes->post('/save_program', 'Cms::save_program');
+    $routes->get('/edit_program/(:num)', 'Cms::edit_program/$1');
+    $routes->post('/update_program/(:num)', 'Cms::update_program/$1');
+    $routes->get('/delete_program/(:num)', 'Cms::delete_program/$1');
+
+    $routes->get('/courtorground', 'Cms::courtorground');
+    $routes->get('/add_courtorground', 'Cms::add_courtorground');
+    $routes->post('/save_courtorground', 'Cms::save_courtorground');
+    $routes->get('/edit_courtorground/(:num)', 'Cms::edit_courtorground/$1');
+    $routes->post('/update_courtorground/(:num)', 'Cms::update_courtorground/$1');
+    $routes->get('/delete_courtorground/(:num)', 'Cms::delete_courtorground/$1');
+
+    $routes->get('/multicenter', 'Cms::multicenter');
+    $routes->get('/add_multicenter', 'Cms::add_multicenter');
+    $routes->post('/save_multicenter', 'Cms::save_multicenter');
+    $routes->get('/edit_multicenter/(:num)', 'Cms::edit_multicenter/$1');
+    $routes->post('/update_multicenter/(:num)', 'Cms::update_multicenter/$1');
+    $routes->get('/delete_multicenter/(:num)', 'Cms::delete_multicenter/$1');
+
+    $routes->get('/studentparents', 'Cms::studentparents');
+    $routes->get('/add_studentparents', 'Cms::add_studentparents');
+    $routes->post('/save_studentparents', 'Cms::save_studentparents');
+    $routes->get('/edit_studentparent/(:num)', 'Cms::edit_studentparent/$1');
+    $routes->post('/update_studentparents/(:num)', 'Cms::update_studentparents/$1');
+    $routes->get('/delete_studentparent/(:num)', 'Cms::delete_studentparent/$1');
+
+
+    $routes->get('/events', 'Cms::events');
+    $routes->get('/add_event', 'Cms::add_event');
+    $routes->post('/save_event', 'Cms::save_event');
+    $routes->get('/edit_event/(:num)', 'Cms::edit_event/$1');
+    $routes->post('/update_event/(:num)', 'Cms::update_event/$1');
+    $routes->get('/delete_event/(:num)', 'Cms::delete_event/$1');
+
+
+    
+    $routes->get('/testimonials', 'Cms::testimonials');
+    $routes->get('/add_testimonial', 'Cms::add_testimonial');
+    $routes->post('/save_testimonial', 'Cms::save_testimonial');
+    $routes->get('/edit_testimonial/(:num)', 'Cms::edit_testimonial/$1');
+    $routes->post('/update_testimonial/(:num)', 'Cms::update_testimonial/$1');
+    $routes->get('/delete_testimonial/(:num)', 'Cms::delete_testimonial/$1');
+    
+    $routes->get('/faq', 'Cms::faq'); 
+    $routes->get('/add_faq', 'Cms::add_faq'); 
+    $routes->post('/save_faq', 'Cms::save_faq'); 
+    $routes->get('/edit_faq/(:num)', 'Cms::edit_faq/$1');
+    $routes->post('/update_faq/(:num)', 'Cms::update_faq/$1'); 
+    $routes->get('/delete_faq/(:num)', 'Cms::delete_faq/$1');  
+
+
+
+>>>>>>> a00c1d0 (05/07/2025)
 });
 // 👆 END Protected Pages Group
 
@@ -96,5 +162,9 @@ $routes->get('/login', 'Login::index');
 $routes->post('/login', 'Login::login');
 $routes->post('/logout', 'Login::logout');
 $routes->get('/register', 'Registration::index');
+<<<<<<< HEAD
 $routes->post('/sign_up', 'Registration::registration');
 
+=======
+$routes->post('/sign_up', 'Registration::registration');
+>>>>>>> a00c1d0 (05/07/2025)

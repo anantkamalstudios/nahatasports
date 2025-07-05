@@ -1,5 +1,6 @@
 <?php include('widget/header.php') ?>
 
+<<<<<<< HEAD
 <!-- Revolution Slider section -->
 <div class="slider_wrap slider_fullwide slider_engine_revo slider_alias_TC-Slider1">
     <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
@@ -1312,6 +1313,1228 @@
 <script type="text/javascript" src="<?= base_url() ?>http://maps.google.com/maps/api/js?key="></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/core.googlemap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/script/login.js"></script>
+=======
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<section class="hero-carousel">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <?php foreach ($slides as $index => $slide): ?>
+            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+                <div class="hero-slide" style="background-image: url('<?= base_url($slide['image']) ?>');">
+                    <div class="container hero-content">
+                        <h1><?= esc($slide['title']) ?></h1>
+                        <p><?= esc($slide['description']) ?></p>
+                        <a href="<?= esc($slide['button1_url']) ?>"
+                            class="btn-reserve-court ms-lg-3"><?= esc($slide['button1_text']) ?></a>
+                        <a href="<?= esc($slide['button2_url']) ?>"
+                            class="btn btn-outline-light px-4"><?= esc($slide['button2_text']) ?></a>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+
+        </div>
+
+        <div class="carousel-indicators">
+            <?php foreach ($slides as $index => $slide): ?>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="<?= $index ?>"
+                class="<?= $index === 0 ? 'active' : '' ?>" aria-current="<?= $index === 0 ? 'true' : 'false' ?>"
+                aria-label="Slide <?= $index + 1 ?>"></button>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+
+<!-- Coaching Programs Offered Section -->
+<!-- <section class="py-5 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Coaching Programs Offered</h1>
+
+        <div class="row g-4">
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="card-img-top mx-auto"
+                        alt="Badminton" style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Badminton</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/karate.png" class="card-img-top mx-auto" alt="Karate"
+                        style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Karate</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/cricket.png" class="card-img-top mx-auto"
+                        alt="Cricket" style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cricket</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/zumba.png" class="card-img-top mx-auto" alt="Zumba"
+                        style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Zumba</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="card-img-top mx-auto"
+                        alt="Badminton" style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Badminton</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/karate.png" class="card-img-top mx-auto" alt="Karate"
+                        style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Karate</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/cricket.png" class="card-img-top mx-auto"
+                        alt="Cricket" style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cricket</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url() ?>assets/theme/images/zumba.png" class="card-img-top mx-auto" alt="Zumba"
+                        style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Zumba</h5>
+                        <p class="mb-1 text-dark">Sinhagad Road / Gangadham Chowk</p>
+                        <p class="mb-1 text-dark">Age group: 6–18 yrs</p>
+                        <p class="mb-3 text-dark">Timings: 6:00 AM – 9:00 PM</p>
+                        <a href="#" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Coaching Programs Offered</h1>
+
+        <div class="row g-4">
+
+            <?php if (!empty($programs)): ?>
+            <?php foreach ($programs as $program): ?>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow rounded-4 text-center p-3">
+                    <img src="<?= base_url($program['image']) ?>" class="card-img-top mx-auto"
+                        alt="<?= esc($program['title']) ?>" style="width: 120px; height: 120px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><?= esc($program['title']) ?></h5>
+                        <p class="mb-1 text-dark"><?= esc($program['location']) ?></p>
+                        <p class="mb-1 text-dark">Age group: <?= esc($program['age_group']) ?></p>
+                        <p class="mb-3 text-dark">Timings: <?= esc($program['timings']) ?></p>
+                        <a href="<?= esc($program['booking_url']) ?>" class="btn-reserve-court ms-lg-3">Book & Play</a>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+            <?php else: ?>
+            <p>No coaching programs found.</p>
+            <?php endif; ?>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION: Book a Court or Ground -->
+<!-- <section class="py-5" style="font-family: 'Poppins', sans-serif;">
+    <div class="container">
+        <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Book a Court or Ground in Minutes</h1>
+
+        <ul class="nav justify-content-center mb-4 flex-wrap gap-2" id="courtTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3 active" id="badminton-tab" data-bs-toggle="tab"
+                    data-bs-target="#badminton" type="button" role="tab">
+                    Badminton
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="cricket-tab" data-bs-toggle="tab"
+                    data-bs-target="#cricket" type="button" role="tab">
+                    Cricket
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="basketball-tab" data-bs-toggle="tab"
+                    data-bs-target="#basketball" type="button" role="tab">
+                    Basketball
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="karate-tab" data-bs-toggle="tab" data-bs-target="#karate"
+                    type="button" role="tab">
+                    Karate
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="dance-tab" data-bs-toggle="tab" data-bs-target="#dance"
+                    type="button" role="tab">
+                    Dance
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="zumba-tab" data-bs-toggle="tab" data-bs-target="#zumba"
+                    type="button" role="tab">
+                    Zumba
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3" id="skating-tab" data-bs-toggle="tab"
+                    data-bs-target="#skating" type="button" role="tab">
+                    Skating
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="courtTabContent">
+            <div class="tab-pane fade show active" id="badminton" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Badminton</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" alt="Badminton"
+                                class="img-fluid" style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="cricket" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Cricket</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/cricket.png" alt="Cricket" class="img-fluid"
+                                style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="basketball" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Basketball</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" alt="Basketball"
+                                class="img-fluid" style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="karate" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Karate</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/karate.png" alt="Karate" class="img-fluid"
+                                style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="dance" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Dance</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/dancer.png" alt="Dance" class="img-fluid"
+                                style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="zumba" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Zumba</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/zumba.png" alt="Zumba" class="img-fluid"
+                                style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="skating" role="tabpanel">
+                <div class="card shadow p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3">Skating</h4>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Real-time availability</li>
+                                <li>• Book hourly slots</li>
+                                <li>• QR code payments</li>
+                            </ul>
+                            <a href="#" class="btn-reserve-court ms-lg-3">Book a Slot Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url() ?>assets/theme/images/Badminton.jpeg" alt="Skating"
+                                class="img-fluid" style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="py-5" style="font-family: 'Poppins', sans-serif;">
+    <div class="container">
+        <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Book a Court or Ground in Minutes</h1>
+
+        <!-- Dynamic Tabs -->
+        <ul class="nav justify-content-center mb-4 flex-wrap gap-2" id="courtTab" role="tablist">
+            <?php foreach ($courts as $index => $court): ?>
+            <li class="nav-item" role="presentation">
+                <button class="btn-reserve-court ms-lg-3 <?= $index === 0 ? 'active' : '' ?>"
+                    id="<?= strtolower($court['name']) ?>-tab" data-bs-toggle="tab"
+                    data-bs-target="#<?= strtolower($court['name']) ?>" type="button" role="tab">
+                    <?= esc($court['name']) ?>
+                </button>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
+        <!-- Dynamic Tab Content -->
+        <div class="tab-content" id="courtTabContent">
+            <?php foreach ($courts as $index => $court): ?>
+            <div class="tab-pane fade <?= $index === 0 ? 'show active' : '' ?>" id="<?= strtolower($court['name']) ?>"
+                role="tabpanel">
+                <!-- <div class="card shadow p-4"> -->
+                <div class="card shadow p-4 mx-auto" style="max-width: 90%;">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h4 class="fw-bold mb-3"><?= esc($court['name']) ?></h4>
+                            <p><?= nl2br(esc($court['description'])) ?></p>
+                            <a href="<?= esc($court['booking_url']) ?>" class="btn-reserve-court ms-lg-3">Book a Slot
+                                Now</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="<?= base_url($court['image']) ?>" alt="<?= esc($court['name']) ?>"
+                                class="img-fluid" style="max-width: 250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- address -->
+<!-- <section class="py-5" style="background-color: #f8f9fa;">
+    <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Our Multi-Center Overview</h1>
+
+    <div class="container mb-5">
+        <h2 class="mb-4 fw-bold" style="color: #302D77;">Sinhagad Road</h2>
+        <div class="row g-4 align-items-start">
+            
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-2">Address</h5>
+                <p>
+                    Sinhagad Road,
+                    Pune, Maharashtra 411030,
+                    India
+                </p>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.872011586733!2d73.82829511487057!3d18.45827248740439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0a67b0a6d7b%3A0x2e04a4aa3f97b3e4!2sSinhagad%20Road%2C%20Pune%2C%20Maharashtra%20411030%2C%20India!5e0!3m2!1sen!2sus!4v1688487362635!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Map - Sinhagad Road"></iframe>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Sports Offered</h5>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Badminton
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Table Tennis
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Swimming
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Fitness Training
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="imageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="rounded"
+                                alt="Badminton Court"
+                                style="max-width: 400px; width: 80%; height: auto; margin: 0 auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="rounded"
+                                alt="Yoga Zone" style="max-width: 400px; width: 80%; height: auto; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="mb-4 fw-bold" style="color: #302D77; text-align :right;">Gangadham Chowk</h2>
+        <div class="row g-4 align-items-start">
+            
+            <div class="col-md-6 order-md-1">
+                <h5 class="fw-bold mb-3">Sports Offered</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Badminton
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Yoga
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Table Tennis
+                            </li>
+                            <li class="mb-2 d-flex align-items-start">
+                                <span class="me-2">&#10003;</span> Strength Training
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="imageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="rounded"
+                                alt="Badminton Court"
+                                style="max-width: 400px; width: 80%; height: auto; margin: 0 auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="<?= base_url() ?>assets/theme/images/badminton.png" class="rounded"
+                                alt="Yoga Zone" style="max-width: 400px; width: 80%; height: auto; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+
+            
+            <div class="col-md-6 order-md-2">
+                <h5 class="fw-bold mb-2">Address</h5>
+                <p>
+                    Gangadham Chowk,
+                    Pune, Maharashtra 411018,
+                    India
+                </p>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.428830853962!2d73.85483371507862!3d18.506440287909357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07c8a37d2d3%3A0x61d01bc4d90907e9!2sGangadham%20Chowk%2C%20Pune%2C%20Maharashtra%20411018!5e0!3m2!1sen!2sus!4v1688487502000!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Map - Gangadham Chowk"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--  -->
+<section class="py-5" style="background-color: #f8f9fa;">
+    <h1 class="text-center mb-5 fw-bold" style="color: #302D77;">Our Multi-Center Overview</h1>
+
+    <?php foreach ($multicenters as $index => $center) : ?>
+    <div class="container mb-5">
+        <h2 class="mb-4 fw-bold <?= $index % 2 ? 'text-end' : '' ?>" style="color: #302D77;">
+            <?= esc($center['name']) ?>
+        </h2>
+        <div class="row g-4 align-items-start <?= $index % 2 ? 'flex-md-row-reverse' : '' ?>">
+            <!-- Sports + Photos -->
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Sports Offered</h5>
+                <div class="row">
+                    <!-- offered pending show -->
+
+                    <div class="row">
+                        <?php
+                                $sports = [];
+                            if (!empty($center['sports'])) {
+                                $decoded = json_decode($center['sports'], true);
+                                if (is_array($decoded)) {
+                                    $sports = $decoded;
+                                }
+                            }
+
+                            // Step 2: If empty, show a message or skip
+                            if (empty($sports)) {
+                                echo '<div class="col-12"><p>No sports available.</p></div>';
+                            } else {
+                                // Step 3: Split into two columns
+                                $chunks = array_chunk($sports, ceil(count($sports) / 2));
+
+                                foreach ($chunks as $chunk) {
+                                    echo '<div class="col-6"><ul class="list-unstyled fs-5">';
+                                    foreach ($chunk as $sport) {
+                                        echo '<li class="mb-2 d-flex align-items-start"><span class="me-2">&#10003;</span>' . esc($sport) . '</li>';
+                                    }
+                                    echo '</ul></div>';
+                                }
+                            }
+                            ?>
+                    </div>
+
+
+                </div>
+
+                <!-- Dynamic Carousel -->
+                <?php $images = json_decode($center['images'] ?? '[]'); ?>
+                <?php if ($images && is_array($images) && count($images)) : ?>
+                <div id="carouselCenter<?= esc($center['id']) ?>" class="carousel slide mt-4" data-bs-ride="carousel"
+                    data-bs-interval="4000">
+                    <div class="carousel-indicators">
+                        <?php foreach ($images as $key => $img) : ?>
+                        <button type="button" data-bs-target="#carouselCenter<?= esc($center['id']) ?>"
+                            data-bs-slide-to="<?= $key ?>" class="<?= $key === 0 ? 'active' : '' ?>"
+                            aria-current="<?= $key === 0 ? 'true' : 'false' ?>"
+                            aria-label="Slide <?= $key + 1 ?>"></button>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <div class="carousel-inner text-center">
+                        <?php foreach ($images as $key => $img) : ?>
+                        <div class="carousel-item <?= $key === 0 ? 'active' : '' ?>">
+                            <img src="<?= base_url($img) ?>" class="rounded" alt="Center Image"
+                                style="max-width: 400px; width: 80%; height: auto; margin: 0 auto;">
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselCenter<?= esc($center['id']) ?>" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselCenter<?= esc($center['id']) ?>" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <?php endif; ?>
+            </div>
+
+            <!-- Address + Map -->
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-2">Address</h5>
+                <p><?= esc($center['address']) ?></p>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="<?= esc($center['map_url']) ?>" style="border:0;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endforeach; ?>
+</section>
+
+
+
+
+
+
+<!-- Student/Parent Features -->
+<!-- <section class="py-5" style="background-color: #342C77;">
+
+
+    <div class="container">
+        <h2 class="mb-4 fw-bold text-white">Student/Parent Features</h2>
+        <ul class="list-unstyled text-white fs-5">
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> Login with ID/OTP
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> Check fee status
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> Download receipts
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> Track attendance
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> View coach feedback
+            </li>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> Book &amp; Play
+            </li>
+        </ul>
+    </div>
+</section> -->
+
+<section class="py-5" style="background-color: #342C77;">
+    <div class="container">
+        <h2 class="mb-4 fw-bold text-white">Student/Parent Features</h2>
+        <ul class="list-unstyled text-white fs-5">
+            <?php foreach ($studentparentfeatures as $feature): ?>
+            <li class="mb-2 d-flex align-items-start">
+                <span class="me-2">&#10003;</span> <?= esc($feature['feature_text']) ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</section>
+
+
+<!-- upcoming events -->
+<!-- <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Upcoming Events & Announcements</h2>
+
+        <div class="row g-4">
+
+            
+            <div class="col-md-3">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <h5 class="fw-bold mb-3" style="color: #342C77;">Free Camps</h5>
+                    <p>Join our free training camps designed to improve your skills and fitness levels.</p>
+                    <div class="text-center mt-1">
+                        <a href="#" class="btn-reserve-court ms-lg-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col-md-3">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <h5 class="fw-bold mb-3" style="color: #342C77;">Holiday Notices</h5>
+                    <p>Stay updated with upcoming holiday schedules and any changes in our operations.</p>
+                    <div class="text-center mt-1">
+                        <a href="#" class="btn-reserve-court ms-lg-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <h5 class="fw-bold mb-3" style="color: #342C77;">Tournaments</h5>
+                    <p>Get details about upcoming tournaments and register to participate.</p>
+                    <div class="text-center mt-1">
+                        <a href="#" class="btn-reserve-court ms-lg-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <h5 class="fw-bold mb-3" style="color: #342C77;">WhatsApp Alerts</h5>
+                    <p>(Optional Integration) Receive timely notifications and alerts via
+                        WhatsApp.</p>
+                    <div class="text-center mt-1">
+                        <a href="#" class="btn-reserve-court ms-lg-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#" class="btn-reserve-court ms-lg-3">View All Announcements</a>
+        </div>
+    </div>
+</section> -->
+
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Upcoming Events & Announcements</h2>
+
+        <div class="row g-4">
+            <?php if (!empty($events)) : ?>
+            <?php foreach ($events as $event) : ?>
+            <div class="col-md-3">
+                <div class="card h-100 shadow rounded-4 p-4">
+                    <h5 class="fw-bold mb-3" style="color: #342C77;">
+                        <?= esc($event['title']) ?>
+                    </h5>
+                    <p><?= esc($event['description']) ?></p>
+                    <?php if (!empty($event['btn_url'])) : ?>
+                    <div class="text-center mt-1">
+                        <a href="<?= esc($event['btn_url']) ?>" class="btn-reserve-court ms-lg-3">
+                            <?= esc($event['btn_title']) ?: 'View Details' ?>
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endforeach; ?>
+            <?php else : ?>
+            <div class="col-12 text-center">
+                <p>No upcoming events at the moment.</p>
+            </div>
+            <?php endif; ?>
+        </div>
+
+
+        <div class="text-center mt-5">
+            <a href="#" class="btn-reserve-court ms-lg-3">View All Announcements</a>
+        </div>
+    </div>
+</section>
+
+<!-- testimonial -->
+<!-- <section class="py-5" style="background-color: #fff;">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Testimonials & Reviews</h2>
+
+        <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+            data-bs-pause="false">
+            <div class="carousel-inner">
+
+                
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Mrs. Sharma"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Mrs. Sharma</h5>
+                                <p class="fst-italic">"The coaching program has transformed my child's confidence
+                                    and skills. Highly recommend!"</p>
+                                <small>Parent</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Rahul"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Rahul</h5>
+                                <p class="fst-italic">"I love the trainers and the friendly environment. The
+                                    feedback from coaches helps me improve every week."</p>
+                                <small>Student</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Mrs. Patel"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Mrs. Patel</h5>
+                                <p class="fst-italic">"Excellent facilities and attentive coaches. My child looks
+                                    forward to every session."</p>
+                                <small>Parent</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Another"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Alex</h5>
+                                <p class="fst-italic">"Great coaching staff and well-maintained facilities. Highly
+                                    recommended."</p>
+                                <small>Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Mrs. Sharma"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Mrs. Sharma</h5>
+                                <p class="fst-italic">"The coaching program has transformed my child's confidence
+                                    and skills. Highly recommend!"</p>
+                                <small>Parent</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Rahul"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Rahul</h5>
+                                <p class="fst-italic">"I love the trainers and the friendly environment. The
+                                    feedback from coaches helps me improve every week."</p>
+                                <small>Student</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Mrs. Patel"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Mrs. Patel</h5>
+                                <p class="fst-italic">"Excellent facilities and attentive coaches. My child looks
+                                    forward to every session."</p>
+                                <small>Parent</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= base_url() ?>assets/theme/images/testimonials.jpg" alt="Another"
+                                    class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3">Alex</h5>
+                                <p class="fst-italic">"Great coaching staff and well-maintained facilities. Highly
+                                    recommended."</p>
+                                <small>Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="py-5" style="background-color: #fff;">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Testimonials & Reviews</h2>
+
+        <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+            data-bs-pause="false">
+            <div class="carousel-inner">
+                <?php
+                // Break testimonials into chunks of 4 for each carousel-item
+                $chunks = array_chunk($testimonials, 2);
+                foreach ($chunks as $index => $chunk):
+                ?>
+                <div class="carousel-item <?= ($index === 0) ? 'active' : '' ?>">
+                    <div class="row">
+                        <?php foreach ($chunk as $testimonial): ?>
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow rounded-4 p-4 text-center" style="color: #342C77;">
+                                <img src="<?= $testimonial['image'] ? base_url('uploads/testimonials/' . $testimonial['image']) : base_url('assets/theme/images/testimonials.jpg') ?>"
+                                    alt="<?= esc($testimonial['name']) ?>" class="rounded-circle mb-3 mx-auto d-block"
+                                    style="width:100px; height:100px; object-fit:cover;">
+                                <h5 class="fw-bold mb-3"><?= esc($testimonial['name']) ?></h5>
+                                <p class="fst-italic">"<?= esc($testimonial['message']) ?>"</p>
+                                <small><?= esc($testimonial['role']) ?></small>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+
+                <?php if (empty($testimonials)): ?>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>No testimonials available at the moment.</p>
+                        </div>
+                    </div>
+                </div>
+                <?php endif; ?>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ -->
+<!-- <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionFAQ">
+
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        style="background-color: transparent; color: black;">
+                        How to register?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        To register, simply visit our registration page, fill out the required details, and submit
+                        the form. You will receive a confirmation email shortly after.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                        style="background-color: transparent; color: black;">
+                        How to pay fees?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Fees can be paid online via our secure payment gateway or offline at our center’s reception
+                        during working hours.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                        style="background-color: transparent; color: black;">
+                        How does Book & Play work?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Book & Play allows you to reserve court or field time slots online and come directly to play
+                        without any hassle.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                        style="background-color: transparent; color: black;">
+                        What if I miss a session?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        In case you miss a session, please inform us in advance. Some sessions can be rescheduled
+                        based on availability and our policies.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #342C77;">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionFAQ">
+
+            <?php if (!empty($faqs)) : ?>
+            <?php foreach ($faqs as $index => $faq) : ?>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading<?= $index ?>">
+                    <button class="accordion-button <?= $index != 0 ? 'collapsed' : '' ?>" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse<?= $index ?>"
+                        aria-expanded="<?= $index == 0 ? 'true' : 'false' ?>" aria-controls="collapse<?= $index ?>"
+                        style="background-color: transparent; color: black;">
+                        <?= esc($faq['question']) ?>
+                    </button>
+                </h2>
+                <div id="collapse<?= $index ?>" class="accordion-collapse collapse <?= $index == 0 ? 'show' : '' ?>"
+                    aria-labelledby="heading<?= $index ?>" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <?= esc($faq['answer']) ?>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+            <?php else : ?>
+            <p>No FAQs found.</p>
+            <?php endif; ?>
+
+        </div>
+    </div>
+</section>
+
+<!-- call to action -->
+<section class="cta-section text-white">
+    <div class="container text-center cta-content">
+        <h2 class="cta-title">Join Nahata Sports Complex Today!</h2>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#coaching" class="btn cta-btn">View Coaching Programs</a>
+            <a href="#booking" class="btn cta-btn">Book Facility</a>
+            <a href="#contact" class="btn cta-btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+
+<!-- footer -->
+<footer style="background-color: #342C77; color: white; padding: 3rem 0;">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <!-- Address 1 -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold mb-3">Sinhagad Road</h5>
+                <p>123 Sports Avenue<br>Cityname, State, 12345</p>
+                <p>Phone: +1 234 567 890<br>Email: info@nahatasports.com</p>
+            </div>
+
+            <!-- Address 2 -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold mb-3">Gangadham Chowk</h5>
+                <p>456 Fitness Road<br>Another City, State, 67890</p>
+                <p>Phone: +1 987 654 321<br>Email: info@nahatasports.com</p>
+            </div>
+
+            <!-- Menu Links -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Coaching</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold mb-3">Follow Us</h5>
+                <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4 small">
+            &copy; 2025 Nahata Sports Complex. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons CDN for social media icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+
+<!-- shankar -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+>>>>>>> a00c1d0 (05/07/2025)
 </body>
 
 </html>

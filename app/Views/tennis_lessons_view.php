@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -88,10 +89,15 @@
     </head>
 
     <body class="archive tennisclub_body body_style_wide body_filled article_style_stretch top_panel_show top_panel_above sidebar_hide">
+=======
+<body
+    class="archive tennisclub_body body_style_wide body_filled article_style_stretch top_panel_show top_panel_above sidebar_hide">
+>>>>>>> a00c1d0 (05/07/2025)
     <!-- Body Wrap -->
     <div class="body_wrap">
         <div class="page_wrap">
             <!-- Header -->
+<<<<<<< HEAD
             <header class="top_panel_wrap top_panel_style_3 scheme_original">
                 <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
                     <!-- User panel -->
@@ -304,6 +310,19 @@
                                         <img src="<?=base_url()?>assets/theme/images/nahata_logo.webp" class="logo_main" alt="" style="width: 150px;">
                                     </a>
                                 </div>
+=======
+
+            <?= $this->include("widget/header.php") ?>
+            <!-- <div class="header_mobile">
+                <div class="content_wrap">
+                    <div class="menu_button icon-menu"></div>
+                    <div class="logo">
+                        <a href="<?= base_url() ?>">
+                            <img src="<?= base_url() ?>assets/theme/images/nahata_logo.webp" class="logo_main" alt=""
+                                style="width: 150px;">
+                        </a>
+                    </div>
+>>>>>>> a00c1d0 (05/07/2025)
                 </div>
                 <div class="side_wrap">
                     <div class="close">Close</div>
@@ -387,7 +406,12 @@
                         <div class="search_wrap search_style_regular search_state_fixed">
                             <div class="search_form_wrap">
                                 <form method="get" class="search_form" action="#">
+<<<<<<< HEAD
                                     <button type="submit" class="search_submit icon-magnifier" title="Start search"></button>
+=======
+                                    <button type="submit" class="search_submit icon-magnifier"
+                                        title="Start search"></button>
+>>>>>>> a00c1d0 (05/07/2025)
                                     <input type="text" class="search_field" placeholder="Search" value="" name="s" />
                                 </form>
                             </div>
@@ -426,11 +450,19 @@
                     </div>
                 </div>
                 <div class="mask"></div>
+<<<<<<< HEAD
             </div>
             <!-- /Header Mobile -->
             <!-- Top Panel -->
             <div class="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
                 <div class="top_panel_title_inner top_panel_inner_style_3 title_present_inner breadcrumbs_present_inner">
+=======
+            </div> -->
+
+            <div class="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
+                <div
+                    class="top_panel_title_inner top_panel_inner_style_3 title_present_inner breadcrumbs_present_inner">
+>>>>>>> a00c1d0 (05/07/2025)
                     <div class="content_wrap">
                         <h1 class="page_title">Coaching</h1>
                         <div class="breadcrumbs">
@@ -441,6 +473,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <!-- /Top Panel -->
             <!-- Page Content Wrap -->
   <div class="carousel-wrapper">
@@ -463,6 +496,29 @@
     <?php } ?>
   </div>
 </div>
+=======
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carousel">
+                    <?php foreach ($sports_list as $sports) { ?>
+                    <div class="card">
+                        <img src="<?= base_url('assets/uploads/' . $sports['sports_image']); ?>"
+                            alt="<?= $sports['sports_title']; ?>">
+                        <p><?= $sports['sports_title']; ?></p>
+                    </div>
+                    <?php } ?>
+
+                    <!-- Duplicate for seamless loop -->
+                    <?php foreach ($sports_list as $sports) { ?>
+                    <div class="card">
+                        <img src="<?= base_url('assets/uploads/' . $sports['sports_image']); ?>"
+                            alt="<?= $sports['sports_title']; ?>">
+                        <p><?= $sports['sports_title']; ?></p>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+>>>>>>> a00c1d0 (05/07/2025)
 
 
 
@@ -476,12 +532,24 @@
                             <aside class="column-1_3 widget widget_socials">
                                 <div class="widget_inner">
                                     <div class="logo">
+<<<<<<< HEAD
                                     <a href="<?=base_url()?>">
                                         <img src="<?=base_url()?>assets/theme/images/nahata_logo.webp" class="logo_main" alt="" style="width: 150px;">
                                     </a>
                                 </div>
                                     <div class="logo_descr">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incidt dolore magna aliqua.</div>
                                     <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_small">
+=======
+                                        <a href="<?= base_url() ?>">
+                                            <img src="<?= base_url() ?>assets/theme/images/nahata_logo.webp"
+                                                class="logo_main" alt="" style="width: 150px;">
+                                        </a>
+                                    </div>
+                                    <div class="logo_descr">Lorem ipsum dolor sit amet, consect etur adipisicing elit,
+                                        sed do eiusmod tempor incidt dolore magna aliqua.</div>
+                                    <div
+                                        class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_small">
+>>>>>>> a00c1d0 (05/07/2025)
                                         <div class="sc_socials_item">
                                             <a href="#" target="_blank" class="social_icons social_twitter">
                                                 <span class="icon-twitter"></span>
@@ -499,6 +567,7 @@
                                         </div>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                             </aside><!-- /Widget: Socials --><!-- Widget: Recent Entries --><!-- /Widget: Recent Entries --><!-- Widget: Text --><aside class="column-1_3 widget widget_text">
                             <h5 class="widget_title">Contact us</h5>
                             <div class="textwidget">
@@ -558,6 +627,76 @@
                                 </div>
                             </article>
                         </aside>
+=======
+                            </aside>
+                            <!-- /Widget: Socials -->
+                            <!-- Widget: Recent Entries -->
+                            <!-- /Widget: Recent Entries -->
+                            <!-- Widget: Text -->
+                            <aside class="column-1_3 widget widget_text">
+                                <h5 class="widget_title">Contact us</h5>
+                                <div class="textwidget">
+                                    <strong>Address</strong>
+                                    <p> 8500 Lorem Street, Chicago, IL, 55030</p>
+                                    <strong>Call Us</strong>
+                                    <p>(123) 456-78-90</p>
+                                    <strong>Email</strong>
+                                    <p>sales@yoursite.com</p>
+                                </div>
+                            </aside><!-- /Widget: Text -->
+                            <!-- Widget: RecentPosts -->
+                            <aside class="column-1_3 widget widget_recent_posts">
+                                <h5 class="widget_title">Latest Posts</h5>
+                                <article class="post_item with_thumb first">
+                                    <div class="post_thumb">
+                                        <img alt="Improve Your Strokes Using The Wall"
+                                            src="<?= base_url() ?>assets/theme/images/image-10-75x75.jpg">
+                                    </div>
+                                    <div class="post_content">
+                                        <h6 class="post_title">
+                                            <a href="post-single.html">Improve Your Strokes Using The Wall</a>
+                                        </h6>
+                                        <div class="post_info">
+                                            <span class="post_info_item post_info_posted">
+                                                <a href="#" class="post_info_date">February 6, 2016</a>
+                                            </span>
+                                            <span class="post_info_item post_info_posted_by">by
+                                                <a href="#" class="post_info_author">John Doe</a>
+                                            </span>
+                                            <span class="post_info_item post_info_counters">
+                                                <a href="#" class="post_counters_item post_counters_views icon-eye">
+                                                    <span class="post_counters_number">4</span>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post_item with_thumb">
+                                    <div class="post_thumb">
+                                        <img alt="The Bad Guy Who Has Done Nothing Wrong"
+                                            src="<?= base_url() ?>assets/theme/images/image-6-75x75.jpg">
+                                    </div>
+                                    <div class="post_content">
+                                        <h6 class="post_title">
+                                            <a href="post-single.html">The Bad Guy Who Has Done Nothing Wrong</a>
+                                        </h6>
+                                        <div class="post_info">
+                                            <span class="post_info_item post_info_posted">
+                                                <a href="#" class="post_info_date">December 4, 2015</a>
+                                            </span>
+                                            <span class="post_info_item post_info_posted_by">by
+                                                <a href="#" class="post_info_author">John Doe</a>
+                                            </span>
+                                            <span class="post_info_item post_info_counters">
+                                                <a href="#" class="post_counters_item post_counters_views icon-eye">
+                                                    <span class="post_counters_number">4</span>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </aside>
+>>>>>>> a00c1d0 (05/07/2025)
                             <!-- /Widget: RecentPosts -->
                         </div>
                     </div>
@@ -565,6 +704,7 @@
             </footer>
             <!-- /Footer -->
             <!-- Copyright -->
+<<<<<<< HEAD
            <div class="copyright_wrap copyright_style_menu">
                     <div class="copyright_wrap_inner">
                         <div class="content_wrap">
@@ -674,10 +814,128 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>var baseUrl = '<?php echo base_url();?>';</script>
 <script type="text/javascript" src="<?php echo base_url()?>assets/script/sign_up.js"></script>
+=======
+            <div class="copyright_wrap copyright_style_menu">
+                <div class="copyright_wrap_inner">
+                    <div class="content_wrap">
+                        <div class="copyright_text">
+                            Copyright © 2025 <a href="https://anantkamalstudios.com/"
+                                target="_blank">AnantkamalStudios</a>. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Copyright -->
+        </div>
+    </div>
+    <!-- /Body Wrap -->
+    <div id="popup_registration_form" class="popup_wrap popup_registration_form bg_tint_light">
+        <a href="#" class="popup_close"></a>
+        <div class="form_wrap">
+            <form name="registration_form" method="post" action="<?= base_url('user_registration') ?>"
+                class="popup_form registration_form" id="registration_form">
+                <div class="form_left">
+                    <div class="popup_form_field login_field iconed_field icon-user">
+                        <input type="text" id="full_name" name="full_name" placeholder="Full name">
+                    </div>
+                    <div class="popup_form_field email_field iconed_field icon-mail">
+                        <input type="text" id="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="popup_form_field email_field iconed_field icon-mail">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="popup_form_field agree_field">
+                        <input type="checkbox" value="agree" id="registration_agree" name="registration_agree">
+                        <label for="registration_agree">I agree with</label> <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="popup_form_field submit_field">
+                        <button class="btn btn-lg" name="sign_up_button" id="sign_up_button">Sign Up</button>
+                    </div>
+                </div>
+                <div class="form_right">
+                    <div class="popup_form_field password_field iconed_field icon-lock">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="popup_form_field password_field iconed_field icon-lock">
+                        <input type="password" id="newpassword" name="newpassword" placeholder="Confirm Password">
+                    </div>
+                    <div class="popup_form_field password_field iconed_field icon-lock">
+                        <input type="text" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="popup_form_field description_field">Minimum 6 characters</div>
+                </div>
+            </form>
+            <div class="result message_block"></div>
+        </div>
+    </div>
+
+    <div id="popup_login_form" class="popup_wrap popup_login bg_tint_light">
+        <a href="#" class="popup_close"></a>
+        <div class="form_wrap">
+            <div class="form_left">
+                <form class="w-100 mt-4 pt-2 login_form" id="login_form" action="javascript:void(0)" method="post">
+                    <div class="popup_form_field login_field iconed_field icon-user">
+                        <input type="text" id="email" name="email" placeholder="Login or Email">
+                    </div>
+                    <div class="popup_form_field password_field iconed_field icon-lock">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="popup_form_field remember_field">
+                        <a href="#" class="forgot_password">Forgot password?</a>
+                        <input type="checkbox" id="rememberme" name="rememberme">
+                        <label for="rememberme">Remember me</label>
+                    </div>
+                    <div class="popup_form_field submit_field">
+                        <button class="btn btn-lg btn-primary w-100" name="login_save" id="login_save">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form_right">
+                <div class="login_socials_title">You can login using your social profile</div>
+                <div class="login_socials_list">
+                    <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_facebook">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_twitter">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_gplus">
+                                <span class="icon-gplus"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_socials_problem">
+                    <a href="#">Problem with login?</a>
+                </div>
+                <div class="result message_block"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Side block with weather plugin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    var baseUrl = '<?php echo base_url(); ?>';
+    </script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/script/log.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    var baseUrl = '<?php echo base_url(); ?>';
+    </script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/script/sign_up.js"></script>
+>>>>>>> a00c1d0 (05/07/2025)
 
 
     <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
 
+<<<<<<< HEAD
     <script type="text/javascript" src="<?=base_url()?>assets/theme/js/jquery/jquery.js"></script>
 
     <script type="text/javascript" src="<?=base_url()?>assets/theme/js/_packed.js"></script>
@@ -718,5 +976,49 @@
 
 
     </body>
+=======
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/jquery/jquery.js"></script>
+
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/_packed.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/global.min.js"></script>
+
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/vendor/woocommerce/woocommerce.min.js">
+    </script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/vendor/woocommerce/cart-fragments.min.js">
+    </script>
+
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/core.utils.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/core.init.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/theme.init.min.js"></script>
+
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/shortcodes.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>assets/theme/js/core.messages/core.messages.min.js"></script>
+
+    <script>
+    const carousel = document.getElementById('carousel');
+    const scrollAmount = 250; // Scroll distance for each card
+    let autoScroll;
+
+    // Function to start continuous right-to-left scrolling (clockwise)
+    function startAutoScroll() {
+        autoScroll = setInterval(() => {
+            // Scroll the carousel from right to left (clockwise)
+            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
+                // Reset to the beginning when reached the end
+                carousel.scrollLeft = 0;
+            } else {
+                carousel.scrollLeft += scrollAmount; // Scroll right to left (clockwise)
+            }
+        }, 30); // Adjust interval time for smoothness
+    }
+
+    // Start continuous right-to-left scroll immediately on load
+    startAutoScroll();
+    </script>
+
+
+
+</body>
+>>>>>>> a00c1d0 (05/07/2025)
 
 </html>

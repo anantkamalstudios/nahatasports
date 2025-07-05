@@ -223,9 +223,16 @@ blockquote > a:hover, blockquote > p > a:hover {
 
 /* Tables */
 td,
+<<<<<<< HEAD
 th {
 	border-color: rgba(142,144,146,0.2);
 }
+=======
+/* th {
+	border-color: rgba(142,144,146,0.2);
+} */
+ 
+>>>>>>> a00c1d0 (05/07/2025)
 .sc_table table {
 	/*overflow: hidden;*/
 	/* In Chrome hide right and bottom borders for the table */

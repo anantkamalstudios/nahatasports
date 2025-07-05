@@ -20,6 +20,7 @@ class Login extends BaseController
         return view('login_view', $data);
     }
 
+<<<<<<< HEAD
     public function login()
     {
         $email                    = $this->request->getPost('email');
@@ -56,6 +57,54 @@ class Login extends BaseController
         }
     }
 
+=======
+   public function login()
+{
+    $validation = \Config\Services::validation();
+
+    $input = $this->request->getPost();
+
+    $validation->setRules([
+        'email' => 'required|valid_email',
+        'password' => 'required'
+    ]);
+
+    if (!$validation->run($input)) {
+        $errors = $validation->getErrors();
+        $error_message = implode(' ', $errors);
+        echo json_encode(['error' => $error_message]);
+        exit;
+    }
+
+    $email = $input['email'];
+    $password = $input['password'];
+
+    $user_row = $this->login_model->get_user_from_email($email);
+
+    if (!empty($user_row)) {
+        if (password_verify($password, $user_row->password)) {
+            $this->session->set([
+                "user_id" => $user_row->user_id,
+                "full_name" => $user_row->full_name,
+                "email" => $user_row->email,
+                "password" => $user_row->password,
+                'logged_in' => true,
+            ]);
+            echo json_encode(['success' => 'Login successful.']);
+            exit;
+        } else {
+            echo json_encode(['error' => 'Invalid password.']);
+            exit;
+        }
+    } else {
+        echo json_encode(['error' => 'Invalid email.']);
+        exit;
+    }
+}
+    
+
+
+>>>>>>> a00c1d0 (05/07/2025)
     // public function logout()
     // {
     //     $session_items = ['user_id', 'email', 'password'];
@@ -69,4 +118,8 @@ class Login extends BaseController
         session()->destroy();
         return redirect()->to(base_url('login'));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a00c1d0 (05/07/2025)

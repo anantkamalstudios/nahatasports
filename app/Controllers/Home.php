@@ -3,6 +3,15 @@
 namespace App\Controllers;
 
 use App\Models\BookingModel;
+<<<<<<< HEAD
+=======
+use App\Models\HeroModel;
+use App\Models\CoachingProgramModel;
+use App\Models\CourtGroundModel;
+use App\Models\CenterModel;
+use App\Models\StudentParentFeatureModel;
+use App\Models\TestimonialModel;
+>>>>>>> a00c1d0 (05/07/2025)
 
 class Home extends BaseController
 {
@@ -15,10 +24,82 @@ class Home extends BaseController
         $this->login_model                = model('login_model');
         $this->user_id                    = $this->session->get('user_id');
     }
+<<<<<<< HEAD
     public function index()
     {
         return view('index_view');
     }
+=======
+    // public function index()
+    // {
+    //     return view('index_view');
+    // }
+
+// public function index()
+// {
+//     $heroModel = new \App\Models\HeroModel();
+//     $programModel = new \App\Models\CoachingProgramModel();
+//     $courts = new \App\Models\CourtGroundModel();
+
+//     $slides = $heroModel->findAll();
+//     $programs = $programModel->findAll();
+//     $courts = $courts->findAll();
+
+//     return view('index_view', [
+//         'slides' => $slides,
+//         'programs' => $programs,
+//         'courts' => $courts
+//     ]);
+// }
+
+// public function faq()
+// {
+//     $faqModel = new \App\Models\FaqModel();
+//     $data['faqs'] = $faqModel->where('status', 1)->findAll();
+
+//     return view('faq_view', $data);
+// }
+
+
+      public function index()
+{
+    $heroModel = new \App\Models\HeroModel();
+    $programModel = new \App\Models\CoachingProgramModel();
+    $courtModel = new \App\Models\CourtGroundModel();
+    $centerModel = new \App\Models\CenterModel();
+    $featureModel = new \App\Models\StudentParentFeatureModel();
+    $eventModel = new \App\Models\EventAnnouncementModel();
+    $TestimonialModel = new \App\Models\TestimonialModel();
+    $FaqModel = new \App\Models\FaqModel();
+    
+
+    $slides = $heroModel->findAll();
+    $programs = $programModel->findAll();
+    $courts = $courtModel->findAll();
+    $multicenters = $centerModel->findAll();
+    $studentparentfeatures = $featureModel->findAll();
+    $events = $eventModel->findAll();
+    $testimonials = $TestimonialModel->findAll();
+    $FaqModel = $FaqModel->findAll();
+    
+
+    return view('index_view', [
+        'slides' => $slides,
+        'programs' => $programs,
+        'courts' => $courts,
+        'multicenters' => $multicenters,
+        'studentparentfeatures' => $studentparentfeatures,
+        'events' => $events,
+        'testimonials' => $testimonials,
+        'faqs' => $FaqModel,
+        
+    ]);
+}
+
+
+
+
+>>>>>>> a00c1d0 (05/07/2025)
 
 
     public function member()
@@ -170,4 +251,8 @@ class Home extends BaseController
     {
         return view('booking_responce_view');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a00c1d0 (05/07/2025)

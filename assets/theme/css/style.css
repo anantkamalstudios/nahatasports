@@ -189,10 +189,17 @@ table {
 	border-collapse:collapse;
 	border-spacing: 0;
 }
+<<<<<<< HEAD
 td, th {
 	border: 1px solid #e4e7e8;
 	padding: 4px;
 }
+=======
+/* td, th {
+	border: 1px solid #e4e7e8;
+	padding: 4px;
+} */
+>>>>>>> a00c1d0 (05/07/2025)
 caption, th {
 	font-weight: bold;
 	text-align: center;
@@ -1912,7 +1919,11 @@ body:not(.top_panel_fixed) .top_panel_position_over .top_panel_bottom {
 	margin-top: 2em;
 }
 .contact_logo {
+<<<<<<< HEAD
 	max-width: 26%;
+=======
+	max-width: 13%;
+>>>>>>> a00c1d0 (05/07/2025)
 	float: left;
 	margin-right: 2em;
 }
@@ -6434,7 +6445,11 @@ a.tribe-events-read-more:hover,
 .columns_wrap .info_block2 .column_padding_bottom {padding-bottom: 0;}
 
 .general_info_section{
+<<<<<<< HEAD
 	padding: 2.857em 0 !important;
+=======
+	padding: 0em 0 !important;
+>>>>>>> a00c1d0 (05/07/2025)
 	background-image:url(http://placehold.it/1170x513);
 	background-repeat:no-repeat;
 	background-size:cover;
